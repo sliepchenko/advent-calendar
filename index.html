@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Advent Calendar</title>
+  <meta charset="UTF-8">
+  <title>Advent Calendar</title>
+
+  <!-- icon -->
+  <link href="/assets/icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+  <link href="/assets/icons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+  <link href="/assets/icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="/assets/icons/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/assets/icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  <link href="/assets/icons/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/assets/icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+  <link href="/assets/icons/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link href="/assets/icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/assets/icons/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+  <link href="/assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="/assets/icons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+  <link href="/assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="manifest.json" rel="manifest">
+  <meta content="#ffffff" name="msapplication-TileColor">
+  <meta content="/ms-icon-144x144.png" name="msapplication-TileImage">
+  <meta content="#ffffff" name="theme-color">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,500,700" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+  <meta content="no-cache" http-equiv="Pragma"/>
+  <meta content="0" http-equiv="Expires"/>
+
+  <!-- Pure Snow -->
+  <script defer src="/pure-snow/index.js"></script>
+  <link href="/pure-snow/index.css" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5K8SM9ZTQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () {
+      dataLayer.push(arguments);
+    };
+    window.gSendEvent = function (name, body) {
+      window.gtag('event', name, {
+        ...body
+      });
+    };
+
+    gtag('js', new Date());
+    gtag('config', 'G-R5K8SM9ZTQ');
+  </script>
+
+  <!-- Sentry -->
+  <script crossorigin="anonymous" src="https://js.sentry-cdn.com/30e900b78c865e7d712633c3e5b63412.min.js"></script>
+  <script>
+    Sentry.onLoad(function () {
+      Sentry.init({
+        // You can add any additional configuration here
+      });
+    });
+  </script>
 </head>
 <body>
-    <h1>Hello World</h1>
+<script src="index.js" type="module"></script>
+
+<div id="snowWrapper"></div>
 </body>
 </html>
