@@ -2,7 +2,7 @@ import { CardsWrapper } from './CardsWrapper.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-10-30 15:46:49';
+  static VERSION = '2024-10-31 16:28:00';
 
   #shadow = this.attachShadow({ mode: 'closed' });
 
@@ -31,6 +31,12 @@ export class Application extends HTMLElement {
         margin-top: 32px;
         filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 0.5));
       }
+
+      .version {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
     `);
 
     this.#shadow.adoptedStyleSheets = [ sheet ];
@@ -42,6 +48,11 @@ export class Application extends HTMLElement {
     logo.src = './assets/logo.svg';
     logo.alt = 'Logo';
     this.#shadow.appendChild(logo);
+
+    const version = document.createElement('div');
+    version.className = 'version';
+    version.textContent = `Version: ${ Application.VERSION }`;
+    this.#shadow.appendChild(version);
 
     const cardsWrapper = new CardsWrapper();
     this.#shadow.appendChild(cardsWrapper);
