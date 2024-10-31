@@ -29,7 +29,7 @@ export class Application extends HTMLElement {
         width: 256px;
 
         margin-top: 32px;
-        filter: drop-shadow(0px 0px 3px rgb(255 255 255 / 1));
+        opacity: 0.9;
       }
     `);
 
