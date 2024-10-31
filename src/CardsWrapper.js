@@ -34,7 +34,6 @@ export class CardsWrapper extends HTMLElement {
         gap: 8px;
         justify-content: center;
 
-        max-width: 1280px;
         margin: 16px auto;
       }
     `);
@@ -44,8 +43,9 @@ export class CardsWrapper extends HTMLElement {
 
   #buildUI() {
     this.#shadow.appendChild(new CardItem({
-      id: 0,
-      title: 'Happy Holidays EPAMers!',
+      day: 'Happy Holidays EPAMers!',
+      title: 'Turn cards in appropriate date and join to our celebration!',
+      main: true,
       opened: true,
       locked: true,
       row: '1',

@@ -1,33 +1,38 @@
 export class CardItem extends HTMLElement {
   #shadow = this.attachShadow({ mode: 'closed' });
 
-  #id = 0;
+  #content = null;
+
+  #day = '';
   #title = '';
   #description = '';
 
   #column = '';
   #row = '';
 
+  #main = false;
   #opened = false;
   #locked = true;
 
-  constructor({ id, title, description, column, row, opened, locked }) {
+  constructor({ day, title, description, column, row, main, opened, locked }) {
     super();
 
-    this.#id = id;
+    this.#day = day;
     this.#title = title;
     this.#description = description;
 
     this.#column = column;
     this.#row = row;
 
-    this.#opened = opened;
+    this.#main = main;
+    this.#opened = opened || false;
     this.#locked = locked;
   }
 
   async connectedCallback() {
     this.#addStyles();
     this.#buildUI();
+    this.#addInteraction();
   }
 
   #addStyles() {
@@ -38,37 +43,93 @@ export class CardItem extends HTMLElement {
         grid-column: ${ this.#column };
         grid-row: ${ this.#row };
 
-        padding: 8px;
+        perspective: 1000px;
+      }
 
-        background-color: ${ this.#id ? '#e64c3d' : '#94bad5' };
+      .card-item__content--opened {
+        transform: rotateY(180deg);
+      }
+
+      .card-item__content {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .card-item__front,
+      .card-item__back {
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 8px;
+        box-sizing: border-box;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .card-item__front-wrapper,
+      .card-item__back-wrapper {
         border-radius: 8px;
 
-        cursor: pointer;
-
-        opacity: ${ this.#id ? 0.9 : 1 };
-        transition: opacity 0.3s;
-      }
-
-      :host(:hover) {
-        opacity: 1;
-      }
-
-      .card-item__wrapper {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
 
-        border: 2px dashed #fff;
-        border-radius: 8px;
         box-sizing: border-box;
+      }
 
+      .card-item__front {
+        background-color: ${ this.#main ? '#94bad5' : '#e64c3d' };
+        border-radius: 8px;
+
+        cursor: ${ this.#main ? 'default' : 'pointer' };
+      }
+
+      .card-item__back {
+        background-color: #ffffff;
+        border-radius: 8px;
+        transform: rotateY(180deg);
+      }
+
+      .card-item__front-wrapper,
+      .card-item__back-wrapper {
         width: 100%;
         height: 100%;
       }
 
-      .card-item__title {
+      .card-item__front-wrapper {
+        color: #fff;
+        border: 2px dashed #fff;
+      }
+
+      .card-item__back-wrapper {
+        color: #000;
+        border: 2px dashed #000;
+      }
+
+      .card-item__wrapper * {
         user-select: none;
+      }
+
+      .card-item__title {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .card-item__description {
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0;
       }
     `);
 
@@ -78,19 +139,50 @@ export class CardItem extends HTMLElement {
   #buildUI() {
     this.className = 'card-item';
 
-    const wrapper = document.createElement('div');
-    wrapper.className = 'card-item__wrapper';
-    this.#shadow.appendChild(wrapper);
+    this.#content = document.createElement('div');
+    this.#content.className = 'card-item__content';
+    this.#shadow.appendChild(this.#content);
 
-    const title = document.createElement('h2');
+    const frontSide = document.createElement('div');
+    frontSide.className = 'card-item__front';
+    this.#content.appendChild(frontSide);
+
+    const frontWrapper = document.createElement('div');
+    frontWrapper.className = 'card-item__front-wrapper';
+    frontSide.appendChild(frontWrapper);
+
+    const day = document.createElement('h2');
+    day.className = 'card-item__day';
+    day.textContent = this.#day;
+    frontWrapper.appendChild(day);
+
+
+    const backSide = document.createElement('div');
+    backSide.className = 'card-item__back';
+    this.#content.appendChild(backSide);
+
+    const backWrapper = document.createElement('div');
+    backWrapper.className = 'card-item__back-wrapper';
+    backSide.appendChild(backWrapper);
+
+    const title = document.createElement('h3');
     title.className = 'card-item__title';
-    title.textContent = this.#opened ? this.#title : this.#id;
-    wrapper.appendChild(title);
+    title.textContent = this.#title;
+    backWrapper.appendChild(title);
 
     const description = document.createElement('p');
     description.className = 'card-item__description';
     description.textContent = this.#description;
-    wrapper.appendChild(description);
+    backWrapper.appendChild(description);
+  }
+
+  #addInteraction() {
+    this.addEventListener('click', () => {
+      if (this.#locked || this.#opened) return;
+
+      this.#opened = true;
+      this.#content.classList.add('card-item__content--opened');
+    });
   }
 }
 
