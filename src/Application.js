@@ -39,7 +39,7 @@ export class Application extends HTMLElement {
   #buildUI() {
     const logo = document.createElement('img');
     logo.className = 'logo';
-    logo.src = '/assets/logo.svg';
+    logo.src = './assets/logo.svg';
     logo.alt = 'Logo';
     this.#shadow.appendChild(logo);
 
