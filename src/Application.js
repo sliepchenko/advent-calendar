@@ -1,20 +1,50 @@
+import { CardsWrapper } from './CardsWrapper.js';
+
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
   static VERSION = '2024-10-30 15:46:49';
+
+  #shadow = this.attachShadow({ mode: 'closed' });
 
   constructor() {
     super();
   }
 
-  connectedCallback() {
-    // fetch('https://api.github.com/repos/pscode-org/pure-snow/releases/latest')
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     const latestVersion = data.tag_name;
-    //     if (latestVersion !== Application.VERSION) {
-    //       console.log(`New version available: ${ latestVersion }`);
-    //     }
-    //   });
+  async connectedCallback() {
+    this.#addStyles();
+    this.#buildUI();
+  }
+
+  #addStyles() {
+    const sheet = new CSSStyleSheet();
+
+    sheet.replaceSync(`
+      :host {
+
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        width: 256px;
+
+        margin-top: 32px;
+        filter: drop-shadow(0px 0px 3px rgb(255 255 255 / 1));
+      }
+    `);
+
+    this.#shadow.adoptedStyleSheets = [ sheet ];
+  }
+
+  #buildUI() {
+    const logo = document.createElement('img');
+    logo.className = 'logo';
+    logo.src = '/assets/logo.svg';
+    logo.alt = 'Logo';
+    this.#shadow.appendChild(logo);
+
+    const cardsWrapper = new CardsWrapper();
+    this.#shadow.appendChild(cardsWrapper);
   }
 }
 
