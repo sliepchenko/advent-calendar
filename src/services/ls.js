@@ -25,7 +25,7 @@ class Ls {
     const data = JSON.parse(storage);
 
     data.opened.push(day);
-    data.opened.sort();
+    data.opened.sort((a, b) => a - b);
 
     localStorage.setItem('advent-calendar', JSON.stringify({
       ...data
