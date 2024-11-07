@@ -237,7 +237,7 @@ export class CardItem extends HTMLElement {
     audio.volume = 0.5;
     audio.play();
 
-    this.#ga.sendCardOpen(this.#id);
+    this.#ga.cardClicked(this.#id);
     this.#ls.setCardOpen(this.#id);
   }
 
@@ -245,12 +245,13 @@ export class CardItem extends HTMLElement {
     if (this.#locked || !this.#opened) return;
 
     Dialog.open({
+      id: this.#id,
       title: this.#modalTitle,
       description: this.#modalDescription,
       link: this.#modalLink
     });
 
-    this.#ga.sendMoreOpen(this.#id);
+    this.#ga.moreClicked(this.#id);
   }
 }
 

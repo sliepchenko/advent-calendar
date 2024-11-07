@@ -1,15 +1,21 @@
+import Ga from '../services/ga.js';
+
 export class Dialog extends HTMLElement {
   static #dialog = null;
 
+  #ga = new Ga();
+
   #shadow = this.attachShadow({ mode: 'closed' });
 
+  #id = null;
   #title = '';
   #description = '';
   #link = '';
 
-  constructor({ title, description, link }) {
+  constructor({ id, title, description, link }) {
     super();
 
+    this.#id = id;
     this.#title = title;
     this.#description = description;
     this.#link = link;
@@ -142,6 +148,8 @@ export class Dialog extends HTMLElement {
     window.open(this.#link, '_blank');
 
     this.#onCloseClick();
+
+    this.#ga.continueClicked(this.#id);
   }
 }
 

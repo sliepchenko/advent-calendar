@@ -27,12 +27,16 @@ class Ga {
     });
   }
 
-  sendCardOpen(day) {
-    this.#send(`card_open_${ day }`);
+  cardClicked(day) {
+    this.#send(`card_clicked_${ day }`);
   }
 
-  sendMoreOpen(id) {
-    this.#send(`more_open_${ id }`);
+  moreClicked(id) {
+    this.#send(`more_clicked_${ id }`);
+  }
+
+  continueClicked(id) {
+    this.#send(`continue_clicked_${ id }`);
   }
 }
 
