@@ -14,10 +14,10 @@
 - [x] [Analytics] SentryIO integration
 - [x] [Analytics] Extended events for Google Analytics
 - [x] [Cards] Store the state of the opened cards in the local storage
+- [#] [Modal] Dialog window to show detailed information about the card
 
 ## Planned Features
 
-- [ ] Add a popup window to show detailed information about a specific day
 - [ ] Save the state of previously opened cards
 - [ ] Add sound for hover effect
 - [ ] Add music, potentially via Google Music integration, to play a specific list of music

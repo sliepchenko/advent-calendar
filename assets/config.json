@@ -12,6 +12,11 @@
           "title": "Turn cards in appropriate date and join to our celebration!",
           "description": ""
         },
+        "modal": {
+          "title": "",
+          "description": "",
+          "link": ""
+        },
         "position": {
           "column": "1 / 3",
           "row": "1"
@@ -30,6 +35,11 @@
         "back": {
           "title": "Title 1",
           "description": "Description 1"
+        },
+        "modal": {
+          "title": "Title 1",
+          "description": "Description 1",
+          "link": "https://google.com/1"
         },
         "position": {
           "column": "6",
@@ -50,6 +60,11 @@
           "title": "Title 2",
           "description": "Description 2"
         },
+        "modal": {
+          "title": "Title 2",
+          "description": "Description 2",
+          "link": "https://google.com/2"
+        },
         "position": {
           "column": "1",
           "row": "4"
@@ -68,6 +83,11 @@
         "back": {
           "title": "Title 3",
           "description": "Description 3"
+        },
+        "modal": {
+          "title": "Title 3",
+          "description": "Description 3",
+          "link": "https://google.com/3"
         },
         "position": {
           "column": "5",
@@ -88,6 +108,11 @@
           "title": "Title 4",
           "description": "Description 4"
         },
+        "modal": {
+          "title": "Title 4",
+          "description": "Description 4",
+          "link": "https://google.com/4"
+        },
         "position": {
           "column": "2",
           "row": "5"
@@ -107,6 +132,11 @@
           "title": "Title 5",
           "description": "Description 5"
         },
+        "modal": {
+          "title": "Title 5",
+          "description": "Description 5",
+          "link": "https://google.com/5"
+        },
         "position": {
           "column": "6",
           "row": "3"
@@ -123,8 +153,13 @@
           "title": "Day 6"
         },
         "back": {
-          "title": "Title 6",
-          "description": "Description 6"
+          "title": "Photo Contest",
+          "description": "Share your photo of Christmas tree and win a prize!"
+        },
+        "modal": {
+          "title": "Photo Contest",
+          "description": "To participate in the contest, please, share your photo of Christmas tree in the Teams channel. The winner will be announced on the last day of the celebration.",
+          "link": "https://www.google.com/search?q=there+would+be+link+to+a+teams+channel&rlz=1C5GCEM_enHR1111HR1111&oq=there+would+be+link+to+a+teams+channel&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTEyNDE5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
         },
         "position": {
           "column": "1",
@@ -132,7 +167,7 @@
         },
         "state": {
           "active": true,
-          "opened": false,
+          "opened": true,
           "locked": false
         }
       },
@@ -145,13 +180,18 @@
           "title": "Title 7",
           "description": "Description 7"
         },
+        "modal": {
+          "title": "Title 7",
+          "description": "Description 7",
+          "link": "https://google.com/7"
+        },
         "position": {
           "column": "4",
           "row": "3"
         },
         "state": {
           "active": true,
-          "opened": false,
+          "opened": true,
           "locked": false
         }
       },
@@ -161,8 +201,13 @@
           "title": "Day 8"
         },
         "back": {
-          "title": "Title 8",
-          "description": "Description 8"
+          "title": "Music Vibe",
+          "description": "Let's share our favorite Christmas songs!"
+        },
+        "modal": {
+          "title": "Music Vibe",
+          "description": "Let's share our favorite Christmas songs! Please, add your song to the Google Music playlist. We will play it during the last weekend.",
+          "link": "https://music.youtube.com/playlist?list=PL_OfWlPua4o-Kr3HUs6X5UTB_d_92Sshk&jct=ppBLOnxC9o6HpuAaSE5njg"
         },
         "position": {
           "column": "3",
@@ -183,6 +228,11 @@
           "title": "Title 9",
           "description": "Description 9"
         },
+        "modal": {
+          "title": "Title 9",
+          "description": "Description 9",
+          "link": "https://google.com/9"
+        },
         "position": {
           "column": "6",
           "row": "2"
@@ -201,6 +251,11 @@
         "back": {
           "title": "Title 10",
           "description": "Description 10"
+        },
+        "modal": {
+          "title": "Title 10",
+          "description": "Description 10",
+          "link": "https://google.com/10"
         },
         "position": {
           "column": "3",
@@ -221,6 +276,11 @@
           "title": "Title 11",
           "description": "Description 11"
         },
+        "modal": {
+          "title": "Title 11",
+          "description": "Description 11",
+          "link": "https://google.com/11"
+        },
         "position": {
           "column": "2",
           "row": "4"
@@ -239,6 +299,11 @@
         "back": {
           "title": "Title 12",
           "description": "Description 12"
+        },
+        "modal": {
+          "title": "Title 12",
+          "description": "Description 12",
+          "link": "https://google.com/12"
         },
         "position": {
           "column": "5",
@@ -259,6 +324,11 @@
           "title": "Title 13",
           "description": "Description 13"
         },
+        "modal": {
+          "title": "Title 13",
+          "description": "Description 13",
+          "link": "https://google.com/13"
+        },
         "position": {
           "column": "4",
           "row": "5"
@@ -277,6 +347,11 @@
         "back": {
           "title": "Title 14",
           "description": "Description 14"
+        },
+        "modal": {
+          "title": "Title 14",
+          "description": "Description 14",
+          "link": "https://google.com/14"
         },
         "position": {
           "column": "5",
@@ -297,6 +372,11 @@
           "title": "Title 15",
           "description": "Description 15"
         },
+        "modal": {
+          "title": "Title 15",
+          "description": "Description 15",
+          "link": "https://google.com/15"
+        },
         "position": {
           "column": "2",
           "row": "2"
@@ -315,6 +395,11 @@
         "back": {
           "title": "Title 16",
           "description": "Description 16"
+        },
+        "modal": {
+          "title": "Title 16",
+          "description": "Description 16",
+          "link": "https://google.com/16"
         },
         "position": {
           "column": "3 / 5",
@@ -335,6 +420,11 @@
           "title": "Title 17",
           "description": "Description 17"
         },
+        "modal": {
+          "title": "Title 17",
+          "description": "Description 17",
+          "link": "https://google.com/17"
+        },
         "position": {
           "column": "3",
           "row": "2"
@@ -353,6 +443,11 @@
         "back": {
           "title": "Title 18",
           "description": "Description 18"
+        },
+        "modal": {
+          "title": "Title 18",
+          "description": "Description 18",
+          "link": "https://google.com/18"
         },
         "position": {
           "column": "1",
@@ -373,6 +468,11 @@
           "title": "Title 19",
           "description": "Description 19"
         },
+        "modal": {
+          "title": "Title 19",
+          "description": "Description 19",
+          "link": "https://google.com/19"
+        },
         "position": {
           "column": "3",
           "row": "5"
@@ -391,6 +491,11 @@
         "back": {
           "title": "Title 20",
           "description": "Description 20"
+        },
+        "modal": {
+          "title": "Title 20",
+          "description": "Description 20",
+          "link": "https://google.com/20"
         },
         "position": {
           "column": "4",
@@ -411,6 +516,11 @@
           "title": "Title 21",
           "description": "Description 21"
         },
+        "modal": {
+          "title": "Title 21",
+          "description": "Description 21",
+          "link": "https://google.com/21"
+        },
         "position": {
           "column": "2",
           "row": "3"
@@ -429,6 +539,11 @@
         "back": {
           "title": "Title 22",
           "description": "Description 22"
+        },
+        "modal": {
+          "title": "Title 22",
+          "description": "Description 22",
+          "link": "https://google.com/22"
         },
         "position": {
           "column": "5",
@@ -449,6 +564,11 @@
           "title": "Title 23",
           "description": "Description 23"
         },
+        "modal": {
+          "title": "Title 23",
+          "description": "Description 23",
+          "link": "https://google.com/23"
+        },
         "position": {
           "column": "6",
           "row": "1"
@@ -467,6 +587,11 @@
         "back": {
           "title": "Title 24",
           "description": "Description 24"
+        },
+        "modal": {
+          "title": "Title 24",
+          "description": "Description 24",
+          "link": "https://google.com/24"
         },
         "position": {
           "column": "5",

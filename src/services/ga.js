@@ -30,6 +30,10 @@ class Ga {
   sendCardOpen(day) {
     this.#send(`card_open_${ day }`);
   }
+
+  sendMoreOpen(id) {
+    this.#send(`more_open_${ id }`);
+  }
 }
 
 export default Ga;

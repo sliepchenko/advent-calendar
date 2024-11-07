@@ -1,6 +1,8 @@
 import Ga from '../services/ga.js';
 import Ls from '../services/ls.js';
 
+import { Dialog } from './Dialog.js';
+
 export class CardItem extends HTMLElement {
   #ga = new Ga();
   #ls = new Ls();
@@ -12,8 +14,13 @@ export class CardItem extends HTMLElement {
   #id = null;
 
   #frontTitle = '';
+
   #backTitle = '';
   #backDescription = '';
+
+  #modalTitle;
+  #modalDescription;
+  #modalLink;
 
   #column = '';
   #row = '';
@@ -28,8 +35,13 @@ export class CardItem extends HTMLElement {
     this.#id = config.id;
 
     this.#frontTitle = config.front.title
+
     this.#backTitle = config.back.title;
     this.#backDescription = config.back.description;
+
+    this.#modalTitle = config.modal.title;
+    this.#modalDescription = config.modal.description;
+    this.#modalLink = config.modal.link;
 
     this.#column = config.position.column;
     this.#row = config.position.row;
@@ -122,8 +134,8 @@ export class CardItem extends HTMLElement {
       }
 
       .card-item__back-wrapper {
-        color: #000;
-        border: 2px dashed #000;
+        color: #213a4b;
+        border: 2px dashed #213a4b;
       }
 
       .card-item__wrapper * {
@@ -132,14 +144,27 @@ export class CardItem extends HTMLElement {
 
       .card-item__title {
         font-size: 14px;
-        font-weight: 700;
+        line-height: 1.2;
+        font-weight: 500;
         margin: 0;
       }
 
       .card-item__description {
+        font-family: 'Calibri', sans-serif;
         font-size: 12px;
-        font-weight: 700;
-        margin: 0;
+        font-weight: 100;
+        margin: 4px 0 0;
+        padding: 2px;
+      }
+
+      .card-item__button {
+        margin-top: 8px;
+        padding: 2px 8px;
+        border: 1px solid #213a4b;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #213a4b;
+        cursor: pointer;
       }
     `);
 
@@ -188,15 +213,21 @@ export class CardItem extends HTMLElement {
     description.className = 'card-item__description';
     description.textContent = this.#backDescription;
     backWrapper.appendChild(description);
+
+    const button = document.createElement('button');
+    button.className = 'card-item__button';
+    button.textContent = 'Learn more';
+    button.addEventListener('click', () => this.#onMoreClick());
+    backWrapper.appendChild(button);
   }
 
   #addInteraction() {
     if (this.#active) {
-      this.addEventListener('click', () => this.#onClick());
+      this.addEventListener('click', () => this.#onFlipClick());
     }
   }
 
-  #onClick() {
+  #onFlipClick() {
     if (this.#locked || this.#opened) return;
 
     this.#opened = true;
@@ -204,6 +235,18 @@ export class CardItem extends HTMLElement {
 
     this.#ga.sendCardOpen(this.#id);
     this.#ls.setCardOpen(this.#id);
+  }
+
+  #onMoreClick() {
+    if (this.#locked || !this.#opened) return;
+
+    Dialog.open({
+      title: this.#modalTitle,
+      description: this.#modalDescription,
+      link: this.#modalLink
+    });
+
+    this.#ga.sendMoreOpen(this.#id);
   }
 }
 
