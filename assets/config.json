@@ -191,7 +191,7 @@
         },
         "state": {
           "active": true,
-          "opened": true,
+          "opened": false,
           "locked": false
         }
       },
@@ -215,7 +215,7 @@
         },
         "state": {
           "active": true,
-          "opened": false,
+          "opened": true,
           "locked": false
         }
       },
