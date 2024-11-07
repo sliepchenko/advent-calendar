@@ -1,4 +1,8 @@
+import Ga from '../services/ga.js';
+
 export class CardItem extends HTMLElement {
+  #ga = new Ga();
+
   #shadow = this.attachShadow({ mode: 'closed' });
 
   #content = null;
@@ -177,12 +181,21 @@ export class CardItem extends HTMLElement {
   }
 
   #addInteraction() {
-    this.addEventListener('click', () => {
-      if (this.#locked || this.#opened) return;
+    if (this.#active) {
+      this.addEventListener('click', () => this.#onClick());
+    }
+  }
+
+  #onClick() {
+    if (this.#locked || this.#opened) return;
 
       this.#opened = true;
       this.#content.classList.add('card-item__content--opened');
     });
+    this.#opened = true;
+    this.#content.classList.add('card-item__content--opened');
+
+    this.#ga.sendCardOpen(this.#id);
   }
 }
 

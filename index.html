@@ -40,20 +40,6 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5K8SM9ZTQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      dataLayer.push(arguments);
-    };
-    window.gSendEvent = function (name, body) {
-      window.gtag('event', name, {
-        ...body
-      });
-    };
-
-    gtag('js', new Date());
-    gtag('config', 'G-R5K8SM9ZTQ');
-  </script>
 
   <!-- Sentry -->
   <script crossorigin="anonymous" src="https://js.sentry-cdn.com/30e900b78c865e7d712633c3e5b63412.min.js"></script>
