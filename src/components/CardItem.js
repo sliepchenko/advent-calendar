@@ -233,6 +233,10 @@ export class CardItem extends HTMLElement {
     this.#opened = true;
     this.#content.classList.add('card-item__content--opened');
 
+    const audio = new Audio('./assets/sounds/flip.wav');
+    audio.volume = 0.5;
+    audio.play();
+
     this.#ga.sendCardOpen(this.#id);
     this.#ls.setCardOpen(this.#id);
   }

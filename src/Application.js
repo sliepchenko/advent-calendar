@@ -2,7 +2,7 @@ import { CardsWrapper } from './components/CardsWrapper.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-11-07 17:59:35';
+  static VERSION = '2024-11-07 21:29:55';
 
   #shadow = this.attachShadow({ mode: 'closed' });
 
@@ -13,6 +13,7 @@ export class Application extends HTMLElement {
   async connectedCallback() {
     this.#addStyles();
     this.#buildUI();
+    this.#initSfx();
   }
 
   #addStyles() {
@@ -56,6 +57,25 @@ export class Application extends HTMLElement {
 
     const cardsWrapper = new CardsWrapper();
     this.#shadow.appendChild(cardsWrapper);
+  }
+
+  #initSfx() {
+    const audio = new Audio('./assets/sounds/background.wav');
+    audio.loop = true;
+    audio.volume = 0.5;
+    audio.play().catch(err => {
+      this.addEventListener('click', () => {
+        audio.play();
+      }, { once: true });
+    });
+
+    window.addEventListener('blur', () => {
+      audio.pause();
+    });
+
+    window.addEventListener('focus', () => {
+      audio.play();
+    });
   }
 }
 

@@ -14,11 +14,11 @@
 - [x] [Analytics] SentryIO integration
 - [x] [Analytics] Extended events for Google Analytics
 - [x] [Cards] Store the state of the opened cards in the local storage
-- [#] [Modal] Dialog window to show detailed information about the card
+- [x] [Modal] Dialog window to show detailed information about the card
+- [x] [Sounds] Add background music and flip sound
 
 ## Planned Features
 
-- [ ] Add sound for hover effect
 - [ ] Add music, potentially via Google Music integration, to play a specific list of music
 - [ ] Implement adaptive design (maybe)
 - [ ] Move config to some backend
