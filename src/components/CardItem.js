@@ -9,30 +9,34 @@ export class CardItem extends HTMLElement {
 
   #content = null;
 
-  #day = '';
-  #title = '';
-  #description = '';
+  #id = null;
+
+  #frontTitle = '';
+  #backTitle = '';
+  #backDescription = '';
 
   #column = '';
   #row = '';
 
-  #main = false;
+  #active = false;
   #opened = false;
   #locked = true;
 
-  constructor({ day, title, description, column, row, main, opened, locked }) {
+  constructor(config) {
     super();
 
-    this.#day = day;
-    this.#title = title;
-    this.#description = description;
+    this.#id = config.id;
 
-    this.#column = column;
-    this.#row = row;
+    this.#frontTitle = config.front.title
+    this.#backTitle = config.back.title;
+    this.#backDescription = config.back.description;
 
-    this.#main = main;
-    this.#opened = opened || false;
-    this.#locked = locked;
+    this.#column = config.position.column;
+    this.#row = config.position.row;
+
+    this.#active = config.state.active;
+    this.#opened = this.#ls.isCardOpen(config.id) || config.state.opened;
+    this.#locked = config.state.locked;
   }
 
   async connectedCallback() {
@@ -94,10 +98,10 @@ export class CardItem extends HTMLElement {
       }
 
       .card-item__front {
-        background-color: ${ this.#main ? '#94bad5' : '#e64c3d' };
+        background-color: ${ this.#active ? '#e64c3d' : '#94bad5' };
         border-radius: 8px;
 
-        cursor: ${ this.#main ? 'default' : 'pointer' };
+        cursor: ${ this.#active ? 'pointer' : 'default' };
       }
 
       .card-item__back {
@@ -149,6 +153,10 @@ export class CardItem extends HTMLElement {
     this.#content.className = 'card-item__content';
     this.#shadow.appendChild(this.#content);
 
+    if (this.#opened) {
+      this.#content.classList.add('card-item__content--opened');
+    }
+
     const frontSide = document.createElement('div');
     frontSide.className = 'card-item__front';
     this.#content.appendChild(frontSide);
@@ -159,7 +167,7 @@ export class CardItem extends HTMLElement {
 
     const day = document.createElement('h2');
     day.className = 'card-item__day';
-    day.textContent = this.#day;
+    day.textContent = this.#frontTitle;
     frontWrapper.appendChild(day);
 
 
@@ -173,12 +181,12 @@ export class CardItem extends HTMLElement {
 
     const title = document.createElement('h3');
     title.className = 'card-item__title';
-    title.textContent = this.#title;
+    title.textContent = this.#backTitle;
     backWrapper.appendChild(title);
 
     const description = document.createElement('p');
     description.className = 'card-item__description';
-    description.textContent = this.#description;
+    description.textContent = this.#backDescription;
     backWrapper.appendChild(description);
   }
 
@@ -191,9 +199,6 @@ export class CardItem extends HTMLElement {
   #onClick() {
     if (this.#locked || this.#opened) return;
 
-      this.#opened = true;
-      this.#content.classList.add('card-item__content--opened');
-    });
     this.#opened = true;
     this.#content.classList.add('card-item__content--opened');
 

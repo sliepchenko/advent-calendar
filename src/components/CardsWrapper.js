@@ -42,18 +42,7 @@ export class CardsWrapper extends HTMLElement {
   }
 
   #buildUI() {
-    this.#shadow.appendChild(new CardItem({
-      day: 'Happy Holidays EPAMers!',
-      title: 'Turn cards in appropriate date and join to our celebration!',
-      main: true,
-      opened: true,
-      locked: true,
-      row: '1',
-      column: '1 / 3'
-    }));
-
     this.#config.cards.items
-      .sort(() => Math.random() - 0.5)
       .map(item => this.#shadow.appendChild(new CardItem(item)));
   }
 }

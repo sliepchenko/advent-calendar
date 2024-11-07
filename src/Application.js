@@ -1,4 +1,4 @@
-import { CardsWrapper } from './CardsWrapper.js';
+import { CardsWrapper } from './components/CardsWrapper.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
