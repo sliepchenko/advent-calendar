@@ -1,7 +1,9 @@
 import Ga from '../services/ga.js';
+import Ls from '../services/ls.js';
 
 export class CardItem extends HTMLElement {
   #ga = new Ga();
+  #ls = new Ls();
 
   #shadow = this.attachShadow({ mode: 'closed' });
 
@@ -196,6 +198,7 @@ export class CardItem extends HTMLElement {
     this.#content.classList.add('card-item__content--opened');
 
     this.#ga.sendCardOpen(this.#id);
+    this.#ls.setCardOpen(this.#id);
   }
 }
 
