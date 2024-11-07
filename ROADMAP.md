@@ -18,7 +18,6 @@
 
 ## Planned Features
 
-- [ ] Save the state of previously opened cards
 - [ ] Add sound for hover effect
 - [ ] Add music, potentially via Google Music integration, to play a specific list of music
 - [ ] Implement adaptive design (maybe)
