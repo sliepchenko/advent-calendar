@@ -124,6 +124,10 @@ export class CardItem extends HTMLElement {
 
       .card-item__front-wrapper,
       .card-item__back-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
         width: 100%;
         height: 100%;
       }
@@ -153,12 +157,11 @@ export class CardItem extends HTMLElement {
         font-family: 'Calibri', sans-serif;
         font-size: 12px;
         font-weight: 100;
-        margin: 4px 0 0;
+        margin: 0;
         padding: 2px;
       }
 
       .card-item__button {
-        margin-top: 8px;
         padding: 2px 8px;
         border: 1px solid #213a4b;
         border-radius: 4px;
@@ -167,12 +170,16 @@ export class CardItem extends HTMLElement {
         cursor: pointer;
       }
 
-      @media (max-width: 768px) {
-       :host {
-          grid-column: ${ this.#id === 0 ? '1 / 4' : 'auto' };
-          grid-row: auto;
-        }
+     @media (max-width: 768px) {
+      :host {
+         grid-column: ${ this.#id === 0 ? '1 / 4' : 'auto' };
+         grid-row: auto;
+       }
+
+      .card-item__back-wrapper {
+        gap: 2px;
       }
+     }
     `);
 
     this.#shadow.adoptedStyleSheets = [ sheet ];
