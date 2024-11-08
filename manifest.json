@@ -1,5 +1,12 @@
 {
   "name": "Advent Calendar",
+  "short_name": "Advent Calendar",
+  "description": "Happy Holidays EPAMers!",
+  "lang": "en",
+  "theme_color": "#e64c3d",
+  "background_color": "#94bad5",
+  "orientation": "landscape",
+  "display": "fullscreen",
   "icons": [
     {
       "src": ".\/assets\/icons\/android-icon-36x36.png",
@@ -37,5 +44,7 @@
       "type": "image\/png",
       "density": "4.0"
     }
-  ]
+  ],
+  "start_url": "https://mykola.sliepchenko.com/advent-calendar/",
+  "scope": "https://mykola.sliepchenko.com/advent-calendar/"
 }
