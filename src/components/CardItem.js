@@ -110,14 +110,14 @@ export class CardItem extends HTMLElement {
       }
 
       .card-item__front {
-        background-color: ${ this.#active ? '#e64c3d' : '#94bad5' };
+        background-color: var(${ this.#active ? '--red' : '--blue' });
         border-radius: 8px;
 
         cursor: ${ this.#active ? 'pointer' : 'default' };
       }
 
       .card-item__back {
-        background-color: #ffffff;
+        background-color: var(--white);
         border-radius: 8px;
         transform: rotateY(180deg);
       }
@@ -127,19 +127,20 @@ export class CardItem extends HTMLElement {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        padding: 2px;
 
         width: 100%;
         height: 100%;
       }
 
       .card-item__front-wrapper {
-        color: #fff;
-        border: 2px dashed #fff;
+        color: var(--white);
+        border: 2px dashed var(--white);
       }
 
       .card-item__back-wrapper {
-        color: #213a4b;
-        border: 2px dashed #213a4b;
+        color: var(--black);
+        border: 2px dashed var(--black);
       }
 
       .card-item__wrapper * {
@@ -163,10 +164,10 @@ export class CardItem extends HTMLElement {
 
       .card-item__button {
         padding: 2px 8px;
-        border: 1px solid #213a4b;
+        border: 1px solid var(--black);
         border-radius: 4px;
-        color: #fff;
-        background-color: #213a4b;
+        color: var(--white);
+        background-color: var(--black);
         cursor: pointer;
       }
 
@@ -178,6 +179,11 @@ export class CardItem extends HTMLElement {
 
       .card-item__back-wrapper {
         gap: 2px;
+      }
+
+      .card-item__front,
+      .card-item__back {
+        padding: 4px;
       }
      }
     `);

@@ -2,7 +2,7 @@ import { CardsWrapper } from './components/CardsWrapper.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-11-08 10:59:41';
+  static VERSION = '2024-11-08 14:09:06';
 
   #shadow = this.attachShadow({ mode: 'closed' });
 
@@ -21,7 +21,10 @@ export class Application extends HTMLElement {
 
     sheet.replaceSync(`
       :host {
-
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 0 96px;
       }
 
       .logo {
@@ -29,7 +32,6 @@ export class Application extends HTMLElement {
         margin: 0 auto;
         width: 256px;
 
-        margin-top: 32px;
         filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 0.5));
       }
 
@@ -37,6 +39,7 @@ export class Application extends HTMLElement {
         position: fixed;
         bottom: 0;
         right: 0;
+        color: var(--white);
       }
     `);
 
@@ -50,13 +53,13 @@ export class Application extends HTMLElement {
     logo.alt = 'Logo';
     this.#shadow.appendChild(logo);
 
+    const cardsWrapper = new CardsWrapper();
+    this.#shadow.appendChild(cardsWrapper);
+
     const version = document.createElement('div');
     version.className = 'version';
     version.textContent = `Version: ${ Application.VERSION }`;
-    this.#shadow.appendChild(version);
-
-    const cardsWrapper = new CardsWrapper();
-    this.#shadow.appendChild(cardsWrapper);
+    // this.#shadow.appendChild(version);
   }
 
   #initSfx() {

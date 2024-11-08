@@ -1,13 +1,25 @@
+/* Declare basic colours */
+/* https://www.schemecolor.com/christmas-hex-color-codes.php */
+:root {
+  --black: #213a4b;
+  --blue: #94BAD5FF;
+  --gold: #F8B229;
+  --green: #146B3A;
+  --red: #E64C3DFF;
+  --white: #ffffff;
+}
+
 body {
-  background: url("./../assets/background.png");
+  background-image: url("./../assets/background.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position-x: 50%;
+  background-position-y: 100%;
 
   font-family: Bevan, serif;
   margin: 0;
-  padding: 0;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   min-width: 100vw;
   min-height: 100vh;
@@ -19,4 +31,12 @@ body {
   font-weight: 400;
   src: url(/fonts/Bevan-Regular.ttf);
   src: local("Bevan Regular"), local("Bevan-Regular"), url(/fonts/Bevan-Regular.ttf) format("truetype-opentype");
+}
+
+@media (max-width: 425px) {
+  body {
+    overflow-y: auto;
+    background-size: cover;
+    background-position-x: 54%;
+  }
 }

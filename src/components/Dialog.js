@@ -48,7 +48,7 @@ export class Dialog extends HTMLElement {
         left: 0;
         width: 100%;
         height: 100%;
-        color: #213a4b;
+        color: var(--black);
         background-color: rgba(0, 0, 0, 0.5);
       }
 
@@ -58,7 +58,7 @@ export class Dialog extends HTMLElement {
         align-items: center;
         gap: 16px;
         padding: 16px 64px;
-        width: 320px;
+        width: 240px;
         background-color: white;
         border-radius: 8px;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
@@ -93,11 +93,11 @@ export class Dialog extends HTMLElement {
       }
 
       .dialog__close {
-        background-color: #e64c3d;
+        background-color: var(--red);
       }
 
       .dialog__continue {
-        background-color: #16b135;
+        background-color: var(--green);
       }
     `);
 
