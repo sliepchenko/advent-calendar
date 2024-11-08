@@ -166,6 +166,13 @@ export class CardItem extends HTMLElement {
         background-color: #213a4b;
         cursor: pointer;
       }
+
+      @media (max-width: 768px) {
+       :host {
+          grid-column: ${ this.#id === 0 ? '1 / 4' : 'auto' };
+          grid-row: auto;
+        }
+      }
     `);
 
     this.#shadow.adoptedStyleSheets = [ sheet ];

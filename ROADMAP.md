@@ -16,9 +16,8 @@
 - [x] [Cards] Store the state of the opened cards in the local storage
 - [x] [Modal] Dialog window to show detailed information about the card
 - [x] [Sounds] Add background music and flip sound
+- [x] [Design] Adaptive design
 
 ## Planned Features
 
-- [ ] Add music, potentially via Google Music integration, to play a specific list of music
-- [ ] Implement adaptive design (maybe)
 - [ ] Move config to some backend

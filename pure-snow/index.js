@@ -125,8 +125,8 @@ function createSnow() {
   generateSnow(snowflakesCount);
 }
 
-
-window.addEventListener('resize', createSnow);
+// Makes page really slow
+// window.addEventListener('resize', createSnow);
 
 // export createSnow function if using node or CommonJS environment
 if (typeof module !== 'undefined') {
