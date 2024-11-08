@@ -173,7 +173,7 @@ export class CardItem extends HTMLElement {
 
      @media (max-width: 768px) {
       :host {
-         grid-column: ${ this.#id === 0 ? '1 / 4' : 'auto' };
+         grid-column: ${ this.#id === 0 ? '1 / 6' : 'auto' };
          grid-row: auto;
        }
 
@@ -186,6 +186,21 @@ export class CardItem extends HTMLElement {
         padding: 4px;
       }
      }
+
+      @media (max-width: 430px) {
+      :host {
+         grid-column: ${ this.#id === 0 ? '1 / 4' : 'auto' };
+         grid-row: auto;
+       }
+
+      .card-item__back-wrapper {
+        gap: 2px;
+      }
+
+      .card-item__front,
+      .card-item__back {
+        padding: 4px;
+      }
     `);
 
     this.#shadow.adoptedStyleSheets = [ sheet ];

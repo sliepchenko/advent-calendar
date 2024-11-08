@@ -44,7 +44,7 @@ export class CardsWrapper extends HTMLElement {
         }
       }
 
-      @media (max-width: 425px) {
+      @media (max-width: 430px) {
        :host {
           grid-template-columns: repeat(3, 120px);
           grid-template-rows: repeat(9, 120px);

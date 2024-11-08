@@ -11,9 +11,10 @@
 
 body {
   background-image: url("./../assets/background.png");
-  background-size: cover;
+  background-size: auto 100%;
   background-position-x: 50%;
   background-position-y: 100%;
+  background-repeat: no-repeat;
 
   font-family: Bevan, serif;
   margin: 0;
@@ -33,7 +34,7 @@ body {
   src: local("Bevan Regular"), local("Bevan-Regular"), url(/fonts/Bevan-Regular.ttf) format("truetype-opentype");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   body {
     overflow-y: auto;
     background-size: cover;
