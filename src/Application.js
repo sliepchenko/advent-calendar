@@ -36,6 +36,8 @@ export class Application extends HTMLElement {
         margin: 0 auto;
         width: 256px;
         height: 96px;
+
+        pointer-events: none;
       }
 
       .logo__img {
