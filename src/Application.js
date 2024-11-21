@@ -32,6 +32,7 @@ export class Application extends HTMLElement {
 
       .logo {
         display: block;
+        text-align: end;
         margin: 0 auto;
         width: 256px;
         height: 96px;
@@ -46,12 +47,8 @@ export class Application extends HTMLElement {
         top: -48px;
         margin: 0;
         font-size: 32px;
-        text-align: right;
         color: var(--black);
         filter: drop-shadow(0px 0px 3px rgb(256 256 256 / 0.5));
-
-        display: flex;
-        justify-content: flex-end;
       }
 
       .volume {
@@ -91,20 +88,10 @@ export class Application extends HTMLElement {
     logoImage.alt = 'Logo';
     logo.appendChild(logoImage);
 
-    const logoText = document.createElement('div');
+    const logoText = document.createElement('span');
     logoText.className = 'logo__text';
+    logoText.textContent = 'Croatia';
     logo.appendChild(logoText);
-
-    const text = document.createElement('span');
-    text.textContent = 'Croatia';
-    logoText.appendChild(text);
-
-    const coa = document.createElement('img');
-    coa.src = './assets/coat_of_arms.png';
-    coa.alt = 'Coat of arms';
-    coa.width = 23;
-    coa.height = 30;
-    logoText.appendChild(coa);
 
     this.#volume = document.createElement('button');
     this.#volume.className = 'volume';
