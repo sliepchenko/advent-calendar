@@ -73,6 +73,11 @@ export class Application extends HTMLElement {
         bottom: 0;
         right: 10px;
         color: var(--white);
+        opacity: 0;
+      }
+
+      .version:hover {
+        opacity: 1;
       }
     `);
 
