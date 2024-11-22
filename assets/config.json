@@ -23,7 +23,7 @@
         },
         "state": {
           "active": false,
-          "opened": true,
+          "opened": false,
           "locked": true
         }
       },
