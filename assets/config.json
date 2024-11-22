@@ -33,13 +33,14 @@
           "title": "Day 1"
         },
         "back": {
-          "title": "Title 1",
-          "description": "Description 1"
+          "title": "Welcome to Advent Calendar 2024!",
+          "description": "Get ready to spark some holiday spirit with our Advent Calendar!"
         },
         "modal": {
-          "title": "Title 1",
-          "description": "Description 1",
-          "link": "https://google.com/1"
+          "title": "Welcome to",
+          "subtitle": "Advent Calendar 2024!",
+          "description": "Get ready to spark some holiday spirit with our Advent Calendar!\n\nFrom December 1st to 24th, we've lined up a daily dose of fun activities designed to bring us all together. Expect everything from festive crafts to tasty treats.\n\nIt's more than just a countdown to Christmas—it's a chance to have so much fun and create some new memories. Join in the fun and let’s make this December one to remember!",
+          "link": ""
         },
         "position": {
           "column": "6",
@@ -57,13 +58,14 @@
           "title": "Day 2"
         },
         "back": {
-          "title": "Title 2",
-          "description": "Description 2"
+          "title": "Gratitude Wall",
+          "description": "\"Thank you!\""
         },
         "modal": {
-          "title": "Title 2",
-          "description": "Description 2",
-          "link": "https://google.com/2"
+          "title": "Activity of the Day",
+          "subtitle": "Gratitude Wall",
+          "description": "\uD83C\uDF88\"As the year draws near its fall,\nLet's send thanks to one and all!\nFor support and laughter through and through,\nHere’s something special you can do!\"\n\nAs the year comes to a close, take a moment and show appreciation for the people who brought joy and cheer into our lives.\n\n\uD83C\uDF10 Online Action: Visit our HERO's portal and give a badge of honor to those who have made a difference within 2024 for you. Recognize their help, contribution into your development and let them know how much they are valued.\n\n\uD83C\uDFE2 In the Office: Join us at our physical gratitude wall. Pick up a sticker and express your thanks creatively. Post a badge on the wall to publicly acknowledge your workplace heroes and their outstanding contributions.",
+          "link": "https://heroes.epam.com/?suggestednews=true"
         },
         "position": {
           "column": "1",
@@ -81,13 +83,14 @@
           "title": "Day 3"
         },
         "back": {
-          "title": "Title 3",
-          "description": "Description 3"
+          "title": "St. Nicholas Day",
+          "description": "Treats Time"
         },
         "modal": {
-          "title": "Title 3",
-          "description": "Description 3",
-          "link": "https://google.com/3"
+          "title": "St. Nicholas Day",
+          "subtitle": "Treats Time",
+          "description": "\uD83C\uDF84 \"St. Nick's marching near,\nwith glee and with cheer,\nPrepare treats galore,\ngoodies to adore!\"\n\nSt. Nicholas Day is approaching, and it's a perfect occasion to enjoy some festive treats!\n\n\uD83C\uDFE0 At Home: Time to get busy in the kitchen! Pull out your baking tools and ingredients, and start crafting your favorite holiday sweets. Whether it’s cookies, fudge, or peppermint sticks, whip up something special for the celebration.\n\n\uD83C\uDFE2 In the Office: Bring your children dressed in their festive best and join us at the office for a fun-filled celebration. We’ll have treats, stories, and lots of festive fun. St. Nicholas Day is always a hit when we gather together!",
+          "link": ""
         },
         "position": {
           "column": "5",
@@ -105,13 +108,14 @@
           "title": "Day 4"
         },
         "back": {
-          "title": "Title 4",
-          "description": "Description 4"
+          "title": "Paint Time",
+          "description": "Let's paint!"
         },
         "modal": {
-          "title": "Title 4",
-          "description": "Description 4",
-          "link": "https://google.com/4"
+          "title": "Paint Time",
+          "subtitle": "Let's paint!",
+          "description": "\uD83C\uDFA8\"Grab your brushes,\nsplash some hues,\ntoday we paint with no excuse!\"\n\nIt's time to unleash your creativity! No experience is needed, just a willingness to try. Grab some paints or drawing materials and let your festive spirit guide your art.\n\n\uD83D\uDD8C\uFE0F At Home or In the Office: Don’t worry if you’re not an artist. Just pick up some painting or drawing tools and give it a shot! This fun contest is all about creativity and enjoying the process.\n\n\uD83C\uDFA8 Office Exhibition: In the office we will have some supplies. So get together within a time slot provided for this activity and let's paint together! Put your masterpiece on a wall, creating a festive gallery that everyone can enjoy.\n\n\uD83D\uDC69\u200D\uD83C\uDFA8 Online Submission & Voting: Submit a photo of your artwork to our special Teams thread. Everyone will have a chance to vote for their favorite piece. The entry with the most votes will win a unique Christmas bauble!\n\nVoting Lasts Until: December 12th",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "2",
@@ -129,13 +133,14 @@
           "title": "Day 5"
         },
         "back": {
-          "title": "Title 5",
-          "description": "Description 5"
+          "title": "Warm Hearts",
+          "description": "International Volunteer Day"
         },
         "modal": {
-          "title": "Title 5",
-          "description": "Description 5",
-          "link": "https://google.com/5"
+          "title": "Warm Hearts",
+          "subtitle": "International Volunteer Day",
+          "description": "\uD83C\uDF1F \"Give a little,\nHelp a lot,\nLet’s warm hearts\nWith what we've got!\"\n\nToday is an International Volunteer Day. Also, Christmas season is a perfect time to show our generosity and make a positive impact. Choose a cause that resonates with you and contribute what you can. Every bit of help counts and brings joy not only to those in need but also to ourselves.\n\n\uD83D\uDC96 Online & Office Participation: Select a charity of your choice. Making a donation is easy and can be done online.",
+          "link": ""
         },
         "position": {
           "column": "6",
@@ -154,12 +159,13 @@
         },
         "back": {
           "title": "Photo Contest",
-          "description": "Share your photo of Christmas tree and win a prize!"
+          "description": "Snowflakes from Childhood"
         },
         "modal": {
           "title": "Photo Contest",
-          "description": "To participate in the contest, please, share your photo of Christmas tree in the Teams channel. The winner will be announced on the last day of the celebration.",
-          "link": "https://www.google.com/search?q=there+would+be+link+to+a+teams+channel&rlz=1C5GCEM_enHR1111HR1111&oq=there+would+be+link+to+a+teams+channel&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTEyNDE5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+          "subtitle": "Snowflakes from Childhood",
+          "description": "❄\uFE0F \"Remember when winter\nwas a wonderland?\nBring it back,\nwith a snip of the hand!\"\n\nRevisit the chilly, joyful days of your childhood by creating your own paper snowflakes. Each cut and fold can bring back cherished memories. Make your unique snowflake designs using simple materials like paper and scissors.\n\n\uD83C\uDFE0 At Home: Grab some paper and scissors and craft your snowflakes. When you're done, take a picture of your creations and share it with us in our chat. Let's see how many unique and memorable designs we can gather!\n\n\uD83C\uDFE2 In the Office: Join us in the office for a group snowflake-making session. Use your snowflakes to decorate your workspace or take them home for a personal touch. Let’s fill our office with these symbols of winter and nostalgia.",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "1",
@@ -167,7 +173,7 @@
         },
         "state": {
           "active": true,
-          "opened": true,
+          "opened": false,
           "locked": false
         }
       },
@@ -177,13 +183,14 @@
           "title": "Day 7"
         },
         "back": {
-          "title": "Title 7",
-          "description": "Description 7"
+          "title": "Happy Saturday!",
+          "description": "Enjoy the weekend!"
         },
         "modal": {
-          "title": "Title 7",
-          "description": "Description 7",
-          "link": "https://google.com/7"
+          "title": "Happy Saturday!",
+          "subtitle": "Take a rest and enjoy the weekend!",
+          "description": "Thank you so much for joining in on our Advent Calendar activities this week! We hope you've enjoyed the festive tasks! Have a wonderful weekend, rest up, and get ready for another exciting week of holiday cheer starting Monday!",
+          "link": ""
         },
         "position": {
           "column": "4",
@@ -201,13 +208,14 @@
           "title": "Day 8"
         },
         "back": {
-          "title": "Music Vibe",
-          "description": "Let's share our favorite Christmas songs!"
+          "title": "Spoiler",
+          "description": "ALERT!"
         },
         "modal": {
-          "title": "Music Vibe",
-          "description": "Let's share our favorite Christmas songs! Please, add your song to the Google Music playlist. We will play it during the last weekend.",
-          "link": "https://music.youtube.com/playlist?list=PL_OfWlPua4o-Kr3HUs6X5UTB_d_92Sshk&jct=ppBLOnxC9o6HpuAaSE5njg"
+          "title": "Spoiler",
+          "subtitle": "ALERT!",
+          "description": "Tomorrow our week of activities starts again and there will be something about music, something about decoration, something about making magic with your own hands \u2060;)\n\nStay tuned...",
+          "link": ""
         },
         "position": {
           "column": "3",
@@ -215,7 +223,7 @@
         },
         "state": {
           "active": true,
-          "opened": true,
+          "opened": false,
           "locked": false
         }
       },
@@ -225,13 +233,14 @@
           "title": "Day 9"
         },
         "back": {
-          "title": "Title 9",
-          "description": "Description 9"
+          "title": "Jingle Bells...",
+          "description": "...sounds everywhere"
         },
         "modal": {
-          "title": "Title 9",
-          "description": "Description 9",
-          "link": "https://google.com/9"
+          "title": "Jingle Bells...",
+          "subtitle": "...sounds everywhere",
+          "description": "\uD83C\uDFB5 \"Spin the records,\njingle the bells,\nlet’s rewind\nto when Christmas dwells!\"\n\nReflect on the holiday music of your childhood, the songs that filled your home as you decorated for the season. Whether they were joyful carols or soothing melodies, we want you to share those special tunes with us.\n\n\uD83C\uDFA4 Online Contribution: We’ve created a YouTube playlist for everyone to contribute their favorite holiday songs. Add the music that brings back fond memories of past celebrations, and let's all enjoy a diverse holiday soundtrack.\n\n\uD83C\uDFE2 In the Office: Listen as these shared melodies play in our common areas. The nostalgic tunes will bring smiles and maybe even some sing-alongs. Let’s fill our workspace with the joyful sounds of our collective holiday histories.",
+          "link": "https://music.youtube.com/playlist?list=PL_OfWlPua4o-Kr3HUs6X5UTB_d_92Sshk&jct=ppBLOnxC9o6HpuAaSE5njg"
         },
         "position": {
           "column": "6",
@@ -249,13 +258,14 @@
           "title": "Day 10"
         },
         "back": {
-          "title": "Title 10",
-          "description": "Description 10"
+          "title": "Story time",
+          "description": "Share your family's holiday traditions"
         },
         "modal": {
-          "title": "Title 10",
-          "description": "Description 10",
-          "link": "https://google.com/10"
+          "title": "Story time",
+          "subtitle": "Share your family's holiday traditions",
+          "description": "\uD83C\uDF1F \"Tales of Yule,\ntales so bright,\nshare yours\nin the festive light!\"\n\nWinter signals a time of warmth and cherished traditions. Each family has its own unique customs that light up the festive season. Today, we invite you to share the traditions and stories that mean the most to you.\n\n\uD83D\uDCDD Online Sharing: Join us in our MS Teams channel to share your family's holiday traditions. It's a wonderful opportunity to learn more about each other and discover the diverse ways we celebrate.",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "3",
@@ -273,12 +283,13 @@
           "title": "Day 11"
         },
         "back": {
-          "title": "Title 11",
-          "description": "Description 11"
+          "title": "DIY",
+          "description": "Advent Wreath Making"
         },
         "modal": {
-          "title": "Title 11",
-          "description": "Description 11",
+          "title": "Activity of the Day",
+          "subtitle": "Advent Wreath Making DIY",
+          "description": "\uD83C\uDF3F \"Twist and twine\nyour festive flair, \ncreate a wreath \nbeyond compare!\"\n\n\uD83C\uDFE0 At Home: use materials you have at hand to create a wreath that not only brings holiday spirit to your space but could also be a contender in tomorrow’s desk decoration contest!\n\n\uD83C\uDFE2 In the Office: Join us in the office to create your own festive advent wreath. We'll provide all the materials you need; you bring your creativity! Craft your wreath using sprigs, bows, and other decorations to make a circle of joy that celebrates tradition.\n\n\uD83C\uDF43 Preview of Tomorrow: Don’t forget to take your wreath with you after making it. You can use it to decorate your desk for tomorrow’s contest. It’s a great way to bring some holiday spirit to your workspace and you might even win a prize for your efforts!",
           "link": "https://google.com/11"
         },
         "position": {
@@ -297,13 +308,14 @@
           "title": "Day 12"
         },
         "back": {
-          "title": "Title 12",
-          "description": "Description 12"
+          "title": "Contest",
+          "description": "Desk Decoration"
         },
         "modal": {
-          "title": "Title 12",
-          "description": "Description 12",
-          "link": "https://google.com/12"
+          "title": "Contest",
+          "subtitle": "Desk Decoration",
+          "description": "\uD83C\uDF81 \"Deck the desks\nwith boughs and holly,\nlet’s make\nthe office jolly!\"\n\nNow that your wreath is ready, it's time to transform your desk. Whether you're at home or in the office, decorate your desk to impress and compete in our festive contest.\n\n\uD83D\uDCF8 Online Submission & Contest Details: Dress up your desk with holiday decorations and capture the festive look with a photo. Share your setup with us through a submission.\n\nGet creative and make your workspace shine! The desk that displays the most holiday spirit and creativity will win a special prize.\n\nContest Closes: December 20th",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "5",
@@ -321,13 +333,14 @@
           "title": "Day 13"
         },
         "back": {
-          "title": "Title 13",
-          "description": "Description 13"
+          "title": "Gathering",
+          "description": "Office Christmas Party"
         },
         "modal": {
-          "title": "Title 13",
-          "description": "Description 13",
-          "link": "https://google.com/13"
+          "title": "Gathering",
+          "subtitle": "Office Christmas Party",
+          "description": "\uD83C\uDF89 \"Cap off the season\nwith flair and fun,\nour Christmas party\nhas begun!\"\n\nLet’s Celebrate Together: Our Christmas party is the perfect time to unwind, have some fun, and enjoy the company of your colleagues. We look forward to seeing everyone there and celebrating our accomplishments and festive spirit together!",
+          "link": ""
         },
         "position": {
           "column": "4",
@@ -345,13 +358,14 @@
           "title": "Day 14"
         },
         "back": {
-          "title": "Title 14",
-          "description": "Description 14"
+          "title": "Season’s Greetings",
+          "description": "for the Weekend!"
         },
         "modal": {
-          "title": "Title 14",
-          "description": "Description 14",
-          "link": "https://google.com/14"
+          "title": "Season’s Greetings",
+          "subtitle": "for the Weekend!",
+          "description": "As we pause our Advent fun for the weekend, we want to extend a huge thank you for your enthusiastic participation! Enjoy your weekend, recharge, and let’s gear up for more festive activities and surprises in the coming week. Stay cozy and have a great Saturday and Sunday!",
+          "link": ""
         },
         "position": {
           "column": "5",
@@ -369,13 +383,14 @@
           "title": "Day 15"
         },
         "back": {
-          "title": "Title 15",
-          "description": "Description 15"
+          "title": "Spoiler",
+          "description": "ALERT!"
         },
         "modal": {
-          "title": "Title 15",
-          "description": "Description 15",
-          "link": "https://google.com/15"
+          "title": "Spoiler",
+          "subtitle": "ALERT!",
+          "description": "Hope you love our advent calendar as much as we do. We can't wait for them to start again! You should anticipate something ugly, something beautiful and something visual.",
+          "link": ""
         },
         "position": {
           "column": "2",
@@ -393,13 +408,14 @@
           "title": "Day 16"
         },
         "back": {
-          "title": "Title 16",
-          "description": "Description 16"
+          "title": "Contest",
+          "description": "Send me a postcard!"
         },
         "modal": {
-          "title": "Title 16",
-          "description": "Description 16",
-          "link": "https://google.com/16"
+          "title": "Activity of the Day",
+          "subtitle": "Postcards From Croatia",
+          "description": "\uD83C\uDF89 \"From rolling hills\nto city lights,\nlet’s craft scenes\nof Croatian nights!\"\n\nExpress the beauty of Croatia this festive season by using your artistic skills to produce an enchanting postcard. Be it the breathtaking landscapes or colorful Christmas markets, your creation will reflect a piece of Croatian charm.\n\n\uD83D\uDCF8 Participation Details: Choose a Croatian scene you find inspiring or a festive setting that captures the holiday spirit. Feel free to use any artistic medium, such as watercolors, colored pencils, or digital tools, to create your postcard.\n\nPrize Information: Once your postcard is ready, submit it for a chance to win a unique Christmas bauble. This distinctive prize will bring a touch of Croatian flair to your holiday decorations.\nLet your artistic flair celebrate Croatian beauty and holiday cheer, and may the best postcard win!\n\nContest is open until December 20th",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "3 / 5",
@@ -417,13 +433,14 @@
           "title": "Day 17"
         },
         "back": {
-          "title": "Title 17",
-          "description": "Description 17"
+          "title": "Say Cheese!",
+          "description": "Holiday Photo"
         },
         "modal": {
-          "title": "Title 17",
-          "description": "Description 17",
-          "link": "https://google.com/17"
+          "title": "Activity of the Day",
+          "subtitle": "Holiday Photo",
+          "description": "\uD83D\uDCF8 \"Deck the halls \nand light the lights, \nlet’s fill our homes\nwith festive sights!\"\n\nIt's time to showcase your holiday spirit! Decorate your space with festive flair, whether it's stringing up lights, hanging garlands, or setting up a majestic Christmas tree. Get creative and transform your home into a holiday wonderland.\n\n\uD83C\uDFE0 Create Your Festive Mood: Decorate your home with all things merry and bright. Whether it’s a twinkling display or a beautifully adorned tree, let your space reflect the joy of the season. Capture this festive setting with a photo to share your holiday spirit.\n\n\uD83C\uDF1F Share Your Sparkle: Post your holiday photo on our channel, where everyone can see your festive decorations. Whether it’s a cozy nook or a grand display, let’s spread the holiday cheer together and enjoy the beautiful scenes created by our community.",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "3",
@@ -441,13 +458,14 @@
           "title": "Day 18"
         },
         "back": {
-          "title": "Title 18",
-          "description": "Description 18"
+          "title": "Rate",
+          "description": "the Movies"
         },
         "modal": {
-          "title": "Title 18",
-          "description": "Description 18",
-          "link": "https://google.com/18"
+          "title": "Activity of the Day",
+          "subtitle": "Holiday Movies Vote",
+          "description": "\"Lights, Camera, Action!\nLet’s roll the holiday attraction!\"\n\nAs the nights draw in and the temperatures drop, It’s perfect for a movie, popcorn non-stop. We’ve gathered classics and new delights, For magical cinematic pre-holiday nights.\n\n\uD83C\uDF1F Vote for Your Favorite Film: Browse your Christmas movie list, take your pick, share with everyone in a dedicated channel. And then vote for the best movies out of those shared by others!\n\n\uD83C\uDFE2 In the Office: Join us on December 20 for a mini screening, we'll showcase a film that’s worth seeing.\n\n\uD83C\uDF7F Let’s Make Movie Magic Together: Cast your vote, then watch and chat, Discuss scenes that stood out. Your vote helps pick the top festive film!",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "1",
@@ -465,13 +483,14 @@
           "title": "Day 19"
         },
         "back": {
-          "title": "Title 19",
-          "description": "Description 19"
+          "title": "Contest",
+          "description": "My Ugly Sweater is THE BEST!"
         },
         "modal": {
-          "title": "Title 19",
-          "description": "Description 19",
-          "link": "https://google.com/19"
+          "title": "Activity of the Day",
+          "subtitle": "Ugly Sweater Contest",
+          "description": "\"Deck yourself\nin the gaudiest threads,\nwhere festive meets\n'fashion' spreads!\"\n\nIt’s time to dig deep into your wardrobe for the most outrageous and eye-catching sweaters you own. The more bells, pom-poms, and wild patterns, the better. Let’s celebrate this fun tradition with enthusiasm and humor!\n\n\uD83D\uDCF8 Share and Inspire: Take a look at previous years' photos to get inspired, then take a bold step and share a photo of yourself in your most flamboyant holiday sweater. Post your picture in our chat and join in the festive fun!\n\n\uD83C\uDFE2 In the Office: Wear your most outrageous sweater to the office tomorrow. Show off your wildest, most festive knits. We’ll see who manages to create the most astonishingly hilarious sweater. Prizes are in store for the most memorable entries!\n\n\uD83C\uDFC6 Prize Alert: Stand out in your ugly sweater creation, Win a custom Lego bauble—a festive sensation!\n\nContest is open until December 20th",
+          "link": "https://teams.microsoft.com/l/channel/19%3Abcd95c57944d44feb97461a18472f23b%40thread.tacv2/Secret%20channel?groupId=1bbf5180-ff0d-420c-9fde-5a2ef2f821f9&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
         },
         "position": {
           "column": "3",
@@ -489,13 +508,14 @@
           "title": "Day 20"
         },
         "back": {
-          "title": "Title 20",
-          "description": "Description 20"
+          "title": "Holiday Movie Night",
+          "description": "Grab your popcorn!"
         },
         "modal": {
-          "title": "Title 20",
-          "description": "Description 20",
-          "link": "https://google.com/20"
+          "title": "Activity of the Day",
+          "subtitle": "Holiday Movie Night",
+          "description": "\"Cue the popcorn, dim the lights,\njoin us for a movie night!\"\n\nThe results from our holiday movie poll are in, and we've chosen the perfect film to enjoy together. Gather round for a night of cinematic cheer and feel-good moments as we watch the community's top pick.\n\n\uD83C\uDF7F In the Office: Join us for a magical evening in the office as we dive into our selected film. Comfy seating and good company await. Don't forget to bring your favorite snacks!\n\n\uD83D\uDD56 Time: see a placeholder in your calendar.\n\n\uD83C\uDFA5 Let's Enjoy Together: Enjoy a mix of laughs, thrills, and heartfelt storytelling. It's the perfect way to unwind and connect with your colleagues after a busy day.",
+          "link": ""
         },
         "position": {
           "column": "4",
@@ -513,12 +533,13 @@
           "title": "Day 21"
         },
         "back": {
-          "title": "Title 21",
-          "description": "Description 21"
+          "title": "Cheers",
+          "description": "to a Festive Weekend!"
         },
         "modal": {
-          "title": "Title 21",
-          "description": "Description 21",
+          "title": "Cheers",
+          "subtitle": "to a Festive Weekend!",
+          "description": "Another week of our Advent Calendar activities is in the books—thanks for being a part of it! We hope it added a little extra joy to your week. Take time to relax this weekend, and we look forward to seeing your smiling faces and holiday spirit as we dive into the last 2 days of the Advent Calendar fun starting Monday!",
           "link": "https://google.com/21"
         },
         "position": {
@@ -537,13 +558,14 @@
           "title": "Day 22"
         },
         "back": {
-          "title": "Title 22",
-          "description": "Description 22"
+          "title": "Are you ready?",
+          "description": "Christmas is coming..."
         },
         "modal": {
-          "title": "Title 22",
-          "description": "Description 22",
-          "link": "https://google.com/22"
+          "title": "Christmas is coming... ",
+          "subtitle": "Let's get ready!",
+          "description": "Soon we will gather together with friends and family and celebrate but before that let's finalize our Advent adventure with something meaningful. See you Monday!",
+          "link": ""
         },
         "position": {
           "column": "5",
@@ -561,13 +583,14 @@
           "title": "Day 23"
         },
         "back": {
-          "title": "Title 23",
-          "description": "Description 23"
+          "title": "Prophecy Orbs",
+          "description": "Discover Your Fortune"
         },
         "modal": {
-          "title": "Title 23",
-          "description": "Description 23",
-          "link": "https://google.com/23"
+          "title": "Activity of the Day",
+          "subtitle": "Prophecy Orbs",
+          "description": "\"Discover Your Fortune: Decorate with Prophecy Orbs\"\n\nAs the year comes to a close, let's embrace a unique tradition. Join us in setting up a special corner filled with prophecy orbs.\n\n\uD83C\uDFE0  At home: go to DIAL and use the given prompt to get your unique prophesy for the upcoming year. Prompt: 2024 year is coming to a close and 2025 is near. be my personal prophet and make a prediction of what awaits me in the future in 2025.\n\n\uD83C\uDFE2 In the office: at the entrance to the office find an orb with prophesies inside. Close your eyes, pick a random one and enjoy the unique prophesy for the upcoming year! It’s a fun, intriguing way to engage with a beautiful tradition and perhaps discover some insightful predictions for the coming year.",
+          "link": "https://chat.lab.epam.com"
         },
         "position": {
           "column": "6",
@@ -585,13 +608,14 @@
           "title": "Day 24"
         },
         "back": {
-          "title": "Title 24",
-          "description": "Description 24"
+          "title": "Make a Wish",
+          "description": "And Let It Come True"
         },
         "modal": {
-          "title": "Title 24",
-          "description": "Description 24",
-          "link": "https://google.com/24"
+          "title": "Today’s Call to Action",
+          "subtitle": "Create a Wish",
+          "description": "As the current year comes to a close and we look forward to the New Year, it’s an ideal time for introspection and goal setting. Reflect on your desires and what you aim to achieve in the upcoming year.\n\n\uD83D\uDCD3 How to Participate: Carve out a quiet moment in your day to reflect. Sit down, think about what truly matters to you, and decide on your biggest goal for 2025. Jot it down in your notebook and start turning your dream into an actionable plan.\n\n\uD83C\uDF08 \"Dream Big: Craft Your Wish for 2025\"",
+          "link": ""
         },
         "position": {
           "column": "5",

@@ -19,6 +19,7 @@ export class CardItem extends HTMLElement {
   #backDescription = '';
 
   #modalTitle;
+  #modalSubtitle;
   #modalDescription;
   #modalLink;
 
@@ -40,6 +41,7 @@ export class CardItem extends HTMLElement {
     this.#backDescription = config.back.description;
 
     this.#modalTitle = config.modal.title;
+    this.#modalSubtitle = config.modal.subtitle;
     this.#modalDescription = config.modal.description;
     this.#modalLink = config.modal.link;
 
@@ -126,7 +128,7 @@ export class CardItem extends HTMLElement {
       .card-item__back-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 4px;
         padding: 2px;
 
         width: 100%;
@@ -282,6 +284,7 @@ export class CardItem extends HTMLElement {
     Dialog.open({
       id: this.#id,
       title: this.#modalTitle,
+      subtitle: this.#modalSubtitle,
       description: this.#modalDescription,
       link: this.#modalLink
     });

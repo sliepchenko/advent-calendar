@@ -16,7 +16,7 @@ export class CardsWrapper extends HTMLElement {
   }
 
   async connectedCallback() {
-    this.#config = await fetch('./assets/config.json')
+    this.#config = await fetch(`./assets/config.json?timestamp=${ Date.now() }`)
       .then(response => response.json());
 
     this.#addStyles();

@@ -2,7 +2,7 @@ import { CardsWrapper } from './components/CardsWrapper.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-11-21 16:27:32';
+  static VERSION = '2024-11-22 16:42:32';
 
   #shadow = this.attachShadow({ mode: 'closed' });
 
