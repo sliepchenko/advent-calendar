@@ -20,6 +20,7 @@ export class Application extends HTMLElement {
     this.#addStyles();
     this.#buildUI();
     this.#initSfx();
+    this.#initEasteregg();
   }
 
   #addStyles() {
@@ -82,6 +83,51 @@ export class Application extends HTMLElement {
       .version:hover {
         opacity: 1;
       }
+
+      .easteregg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .easteregg__author {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        transform: translate(15px, 0) rotate(-90deg);
+      }
+
+      .easteregg__author--show {
+        animation: show 10s forwards;
+        animation-duration: 1s;
+        animation-direction: normal;
+      }
+
+      .easteregg__author--hide {
+        animation: hide 10s forwards;
+        animation-duration: 1s;
+        animation-direction: normal;
+      }
+
+      @keyframes show {
+        0% {
+            right: -350px;
+        }
+        100% {
+            right: -0px;
+        }
+      }
+
+      @keyframes hide {
+        0% {
+            right: 0px;
+        }
+        100% {
+            right: -350px;
+        }
+      }
     `);
 
     this.#shadow.adoptedStyleSheets = [ sheet ];
@@ -120,8 +166,6 @@ export class Application extends HTMLElement {
   #initSfx() {
     const volume = this.#ls.volume;
 
-    console.log(volume);
-
     this.#audio = new Audio('./assets/sounds/background.wav');
     this.#audio.loop = true;
     this.#audio.volume = volume;
@@ -142,12 +186,53 @@ export class Application extends HTMLElement {
     }
 
     window.addEventListener('blur', () => {
-      this.#audio.pause();
+      try {
+        this.#audio.pause();
+      } catch (error) {
+        // do nothing
+      }
     });
 
     window.addEventListener('focus', () => {
-      this.#audio.play();
+      try {
+        this.#audio.play();
+      } catch (error) {
+        // do nothing
+      }
     });
+  }
+
+  #initEasteregg() {
+    const easteregg = document.createElement('div');
+    easteregg.className = 'easteregg';
+    this.#shadow.appendChild(easteregg);
+
+    const eastereggAuthor = document.createElement('img');
+    eastereggAuthor.className = 'easteregg__author';
+    eastereggAuthor.src = './assets/author.png';
+    eastereggAuthor.alt = 'Author';
+    easteregg.appendChild(eastereggAuthor);
+
+    setInterval(() => {
+      const isRightTime = this.#isRightTimeForEasteregg();
+
+      if (isRightTime) {
+        eastereggAuthor.classList.remove('easteregg__author--hide');
+        eastereggAuthor.classList.add('easteregg__author--show');
+
+        setTimeout(() => {
+          eastereggAuthor.classList.remove('easteregg__author--show');
+          eastereggAuthor.classList.add('easteregg__author--hide');
+        }, 3000);
+      }
+    }, 1000);
+  }
+
+  #isRightTimeForEasteregg() {
+    const now = new Date();
+    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const secondsSinceMidnight = Math.round((now - midnight) / 1000);  // converts milliseconds to seconds
+    return secondsSinceMidnight % 2025 === 0;
   }
 }
 
