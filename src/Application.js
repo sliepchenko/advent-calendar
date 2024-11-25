@@ -134,11 +134,11 @@ export class Application extends HTMLElement {
     });
 
     if (document.hasFocus()) {
-      this.#audio.play().catch(err => {
-        this.addEventListener('click', () => {
-          this.#audio.play();
-        }, { once: true });
-      });
+      try {
+        this.#audio.play();
+      } catch (error) {
+        console.error(error);
+      }
     }
 
     window.addEventListener('blur', () => {
