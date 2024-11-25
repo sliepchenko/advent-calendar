@@ -1,8 +1,11 @@
 import { CardsWrapper } from './components/CardsWrapper.js';
+import Ls               from './services/ls.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-11-22 16:42:32';
+  static VERSION = '2024-11-25 09:42:57';
+
+  #ls = new Ls();
 
   #shadow = this.attachShadow({ mode: 'closed' });
 
@@ -115,13 +118,19 @@ export class Application extends HTMLElement {
   }
 
   #initSfx() {
+    const volume = this.#ls.volume;
+
+    console.log(volume);
+
     this.#audio = new Audio('./assets/sounds/background.wav');
     this.#audio.loop = true;
-    this.#audio.volume = 0.5;
+    this.#audio.volume = volume;
+    this.#volume.textContent = volume === 0 ? '🔇' : '🔊';
 
     this.#volume.addEventListener('click', () => {
       this.#audio.volume = this.#audio.volume === 0 ? 0.5 : 0;
       this.#volume.textContent = this.#audio.volume === 0 ? '🔇' : '🔊';
+      this.#ls.volume = this.#audio.volume;
     });
 
     if (document.hasFocus()) {
