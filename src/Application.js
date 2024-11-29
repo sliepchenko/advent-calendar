@@ -3,7 +3,7 @@ import Ls               from './services/ls.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-11-28 09:09:09';
+  static VERSION = '2024-11-29 17:54:11';
 
   #ls = new Ls();
 
