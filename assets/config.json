@@ -50,7 +50,7 @@
         "state": {
           "active": true,
           "opened": false,
-          "locked": true
+          "locked": false
         }
       },
       {
