@@ -50,7 +50,9 @@ export class CardItem extends HTMLElement {
 
     this.#active = config.state.active;
     this.#opened = this.#ls.isCardOpen(config.id) || config.state.opened;
-    this.#locked = config.state.locked;
+
+    // get the current day and check if the card is locked
+    this.#locked = this.#id > (new Date()).getDate();
   }
 
   async connectedCallback() {
