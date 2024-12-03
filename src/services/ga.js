@@ -38,6 +38,10 @@ class Ga {
   continueClicked(id) {
     this.#send(`continue_clicked_${ id }`);
   }
+
+  easternEggShowed() {
+    this.#send('eastern_egg_showed');
+  }
 }
 
 export default Ga;

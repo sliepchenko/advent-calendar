@@ -1,10 +1,12 @@
 import { CardsWrapper } from './components/CardsWrapper.js';
 import Ls               from './services/ls.js';
+import Ga               from './services/ga.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-11-29 17:54:11';
+  static VERSION = '2024-12-03 12:20:43';
 
+  #ga = new Ga();
   #ls = new Ls();
 
   #shadow = this.attachShadow({ mode: 'closed' });
@@ -218,6 +220,8 @@ export class Application extends HTMLElement {
       const isRightTime = this.#isRightTimeForEasteregg();
 
       if (isRightTime) {
+        this.#ga.easternEggShowed();
+
         eastereggAuthor.classList.remove('easteregg__author--hide');
         eastereggAuthor.classList.add('easteregg__author--show');
 
