@@ -4,7 +4,7 @@ import Ga               from './services/ga.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-12-03 12:20:43';
+  static VERSION = '2024-12-09 16:45:19';
 
   #ga = new Ga();
   #ls = new Ls();
