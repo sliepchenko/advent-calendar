@@ -4,7 +4,7 @@ import Ga               from './services/ga.js';
 
 export class Application extends HTMLElement {
   // this value should be replaced by version.js script
-  static VERSION = '2024-12-09 16:45:19';
+  static VERSION = '2024-12-10 14:17:51';
 
   #ga = new Ga();
   #ls = new Ls();
@@ -198,7 +198,10 @@ export class Application extends HTMLElement {
 
     window.addEventListener('focus', () => {
       try {
-        this.#audio.play();
+        this.#audio.play()
+          .catch(() => {
+            // do nothing
+          });
       } catch (error) {
         // do nothing
       }

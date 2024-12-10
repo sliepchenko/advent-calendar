@@ -23,12 +23,12 @@ export class Dialog extends HTMLElement {
     this.#link = link;
   }
 
-  static open({ title, subtitle, description, link }) {
+  static open({ id, title, subtitle, description, link }) {
     if (Dialog.#dialog) {
       Dialog.#dialog.parentNode.removeChild(Dialog.#dialog);
     }
 
-    Dialog.#dialog = new Dialog({ title, subtitle, description, link });
+    Dialog.#dialog = new Dialog({ id, title, subtitle, description, link });
     document.body.appendChild(Dialog.#dialog);
   }
 
@@ -184,6 +184,8 @@ export class Dialog extends HTMLElement {
     window.open(this.#link, '_blank');
 
     this.#onCloseClick();
+
+    console.log(this.#id);
 
     this.#ga.continueClicked(this.#id);
   }
